@@ -17,7 +17,7 @@ gulp.task('server', function() {
         .pipe(server({
             livereload: true,
             defaultFile: 'index.html',
-            fallback: 'index.html',
+            //fallback: 'index.html',
             open: true
         }));
 });
@@ -64,7 +64,7 @@ gulp.task('images', function(){
 
 //React-babel Build
 gulp.task('build', function () {
-    return browserify({entries: 'app/js/./app.jsx', extensions: ['.jsx'], debug: true})
+    return browserify({entries: 'app/js/main.jsx', extensions: ['.jsx'], debug: true})
         .transform('babelify', {presets: ['es2015', 'react']})
         .bundle()
         .pipe(source('bundle.js'))
