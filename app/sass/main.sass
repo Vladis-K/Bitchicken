@@ -1,0 +1,61 @@
+$primary-color: #ff0000
+$text-color: #818181
+$main-color: rgb(221, 221, 221)
+
+body
+	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif
+	overflow-x: hidden
+	color: $text-color
+	margin: 0
+	padding: 0
+
+section
+	position: relative
+
+p
+	font-size: 16px
+	line-height: 1.5
+	color: $text-color
+	z-index: 3
+
+h1
+	margin-top: 1px
+	color: #d88fba
+
+.main-nav li a:link, .main-nav li a:visited, p a:link, p a:visited
+	color: #000
+	background-color: red
+	text-decoration: none
+	transition: all .4s ease
+
+.none
+	display: none !important
+
+#web4evo
+	margin: 40px 0 0 0
+
+#web4evo
+	p
+		font-weight: 500
+	span
+		color: $text-color
+	span  span
+		color: #ff0000
+
+//Slide animation
+
+.appearance
+	visibility: hidden
+
+.slide
+	animation-name: slide
+	animation-duration: 1.5s
+	visibility: visible
+
+@keyframes slide
+	0%
+		opacity: 0
+		transform: translateY(70%)
+	100%
+		opacity: 1
+		transform: translateY(0%)

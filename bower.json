@@ -1,0 +1,21 @@
+{
+  "name": "getinstance",
+  "description": "",
+  "main": "bundle.js",
+  "authors": [
+    "Vladys <vladis.kh@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
